@@ -1,0 +1,52 @@
+<!-- td stands for table data
+tr stands for table row
+th stands for table header
+tr:nth-child(even) : (odd) instead of (even), the styling will occur on row 1,3,5 etc. instead of 2,4,6 etc.
+<colgroup> element is used to style specific columns of a table.
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+}
+
+tr:hover {background-color: #D6EEEE;}
+</style>
+</head>
+<body>
+
+	<table style="width:100%">
+	<caption>Table test</caption>
+		 <tr>
+    <th colspan="4">Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+
+<p>To understand the example better, we have added borders to the table.</p>
+</body>
+</html>
