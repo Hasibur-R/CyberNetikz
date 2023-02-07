@@ -1,0 +1,108 @@
+/* ===================== */
+/* *global tag */
+/* ===================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===================== */
+/* google font */
+/* ===================== */
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+/* Heading */
+h1{
+ font-size: 42px;
+ color:#fff;
+}
+
+
+/* ===================== */
+/* reuseable components */
+/* ===================== */
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.btn:link,
+.btn:visited,
+.btn{
+    background: #333;
+    border-bottom: 3px solid #000;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 60px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+
+
+/* ===================== */
+/* Header Section */
+/* ===================== */
+header{
+    background: #87509c;
+    height: 85vh;
+}
+.logo{
+    height: 35px;
+    width: auto;
+    margin-top: 35px;
+    float: left;
+}
+
+/* main nav */
+.main-nav {
+    float: right;
+    margin-top: 40px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.main-nav li:first-child{
+    margin-left: 0;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase; 
+    background: #643a7900;
+    padding: 6px 16px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited {
+    background: #643a79;
+}
+
+.active{
+    background: #643a79;
+    border-radius: 3px;
+}
+
+.hero-text-box{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
