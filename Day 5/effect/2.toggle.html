@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $(abc).toggle();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button>Toggle between hiding and showing the paragraphs</button>
+
+    <p id="abc">This is a paragraph with little content.</p>
+    <p>This is another small paragraph.</p>
+  </body>
+</html>

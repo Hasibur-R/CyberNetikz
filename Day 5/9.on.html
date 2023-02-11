@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(abc).on({
+          mouseenter: function () {
+            $(this).css("background-color", "lightgray");
+          },
+          mouseleave: function () {
+            $(this).css("background-color", "lightblue");
+          },
+          click: function () {
+            $(this).css("background-color", "yellow");
+          },
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p id="abc">Click or move the mouse pointer over this paragraph.</p>
+    <p>another test</p>
+</body>
+</html>
